@@ -6,6 +6,8 @@
     --secondaryText: #4b5156;
     --themeDotBorder: #000;
     --previewBackground: rgb(251, 249, 243, 0.8);
+    --linkText: rgb(3, 134, 134);
+    --linkTextHover: rgb(0, 68, 68);
 }
 
 body {
@@ -37,7 +39,11 @@ textarea {
 
 a {
     text-decoration: none;
-    color: var(--mainText);
+    color: var(--linkText);
+}
+
+a:hover {
+    color: var(--linkTextHover);
 }
 
 ul {
@@ -230,4 +236,123 @@ ul {
 #corner-br {
     bottom: -5px;
     right: -5px;
+}
+
+
+/* SECTION ABOUT US 2 Began */
+
+.s2 {
+    padding: 70px 0;
+}
+
+.about-us {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.exp-area {
+    display: flex;
+    background-color: rgba(189, 158, 81, 0.486);
+    justify-content: center;
+}
+
+.social-media {
+    text-align: center;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-content: center; */
+}
+
+.social-img {
+    width: 100%;
+}
+
+
+/* SECTION 2 Began */
+
+
+/* SECTION 3 projects Began*/
+
+.s3 {
+    background-color: rgba(77, 159, 165, 0.459);
+    padding: 50px 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.project {
+    border: 1px solid rgb(199, 191, 191);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.project-info {
+    padding: 10px;
+}
+
+.project img {
+    width: 100%;
+}
+
+
+/* SECTION 3 projects End*/
+
+
+/* SECTION 4 Contact Began*/
+
+.s4 {
+    padding: 80px;
+}
+
+.form-style {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    border: 1px solid aqua;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+}
+
+.input-field {
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+/* SECTION 4 Contact End*/
+
+@media only screen and (max-width: 700px) {
+    body {
+        /* display: none; */
+    }
+    .intro-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'nav-wrapper' 'left-column' 'right-column';
+    }
+    .right-column {
+        justify-content: center;
+        padding-bottom: 100px;
+    }
 }
